@@ -1,39 +1,78 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import '../styles/Header.css'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  return (
-    <>
-    <nav className='nav'>
-      <Link path='/' className='site-title'>
-        Site Name
-      </Link>
-      <ul>
-          <li>
-        <Link path='/pricing'>
-          Pricing
-        </Link>
-          </li>
-          <li>
-        <Link path='/About Me'>
-          Services
-        </Link>
-          </li>
-          <li>
-        <Link path='/About Me'>
-          Contact Me
-        </Link>
-          </li>
-          <li>
-        <Link path='/About Me'>
-          About Me
-        </Link>
-          </li>
-      </ul>
-    </nav>
-    </>
-  )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Header
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="bg-gray-800">
+      <nav className="p-4 lg:p-6 md:flex md:justify-between md:items-center">
+        <Link to="/" className="text-white text-2xl font-bold">
+          DeesBeautiess
+        </Link>
+        <button
+          onClick={toggleMenu}
+          className={`lg:hidden text-lg text-white focus:outline-none transform transition-transform duration-300 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        >
+          {isOpen ? "X" : "☰"}
+        </button>
+        <ul className="hidden lg:flex space-x-4">
+          <li>
+            <Link to="/" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link to="/about-me" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
+              About Me
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact-me" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
+              Contact Me
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      {isOpen && (
+        <div className="lg:hidden bg-gray-700 text-white p-4 transition duration-300">
+          <ul>
+            <li className="mb-2">
+              <Link to="/" className="text-white hover:text-gray-400">
+                Home
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/services" className="text-white hover:text-gray-400">
+                Services
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/about-me" className="text-white hover:text-gray-400">
+                About Me
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/contact-me" className="text-white hover:text-gray-400">
+                Contact Me
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Header;

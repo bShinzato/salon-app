@@ -1,3 +1,5 @@
+const {nextui} = require("@nextui-org/theme")
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false,
@@ -5,5 +7,5 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [],
+  plugins:[nextui()],
 }
