@@ -10,40 +10,42 @@ const Header = () => {
 
   return (
     <div className="bg-gray-800">
-      <nav className="p-4 lg:p-6 md:flex md:justify-between md:items-center">
+      <nav className="p-4 lg:p-6 flex justify-between items-center">
         <Link to="/" className="text-white text-2xl font-bold">
           DeesBeautiess
         </Link>
-        <button
-          onClick={toggleMenu}
-          className={`lg:hidden text-lg text-white focus:outline-none transform transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        >
-          {isOpen ? "X" : "☰"}
-        </button>
-        <ul className="hidden lg:flex space-x-4">
-          <li>
-            <Link to="/" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/services" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link to="/about-me" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact-me" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
-              Contact Me
-            </Link>
-          </li>
-        </ul>
+        <div className="flex items-center">
+          <button
+            onClick={toggleMenu}
+            className={`flex items-stretch lg:hidden text-lg text-white focus:outline-none transform transition-transform duration-300 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+          >
+            {isOpen ? "X" : "☰"}
+          </button>
+          <ul className="hidden lg:flex space-x-4">
+            <li>
+              <Link to="/" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/services" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/about-me" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact-me" className="text-white hover:bg-gray-700 px-2 py-1 rounded">
+                Contact Me
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
       {isOpen && (
         <div className="lg:hidden bg-gray-700 text-white p-4 transition duration-300">

@@ -51,13 +51,13 @@ const Footer = () => {
           <h6 className="mb-4 font-semibold uppercase">Contact</h6>
           <ul className="space-y-2">
             <li>
-              <a href="mailto:darelie_ramos@yahoo.com" className="hover:underline">
-                Email: darelie_ramos@yahoo.com
+              <a href="mailto:darelie_ramos@yahoo.com" className="hover:underline break-all">
+              <i class="fa-regular fa-envelope"></i> Email Me
               </a>
             </li>
             <li>
               <a href="tel:+1234567890" className="hover:underline">
-                Phone: +123 456 7890
+              <i class="fa-solid fa-phone"></i> Call Me
               </a>
             </li>
             <li>
@@ -65,7 +65,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               >
-                Address: Click Here to Open Maps
+               <i class="fa-solid fa-map-pin"></i> Directions
               </a>
             </li>
           </ul>
