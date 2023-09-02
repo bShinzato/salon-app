@@ -8,7 +8,7 @@ const TopSection = () => {
           <h1 className="text-6xl font-cursive rounded-3xl text-brownDark">
             Be Your Best Self
           </h1>
-          <p className="text-2xl italic text-brownDark">
+          <p className="text-2xl font-shadowsIntoLight text-brownDark">
             I offer an exciting range of hairstyles combining the newest trends
             with care!
           </p>

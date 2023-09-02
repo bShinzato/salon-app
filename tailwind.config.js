@@ -11,7 +11,10 @@ module.exports = {
         beige: "#F5E1D1",
         brownDark: "#b45f06",
       },
-      fontFamily: { cursive: ["Cookie"] },
+      fontFamily: {
+        cursive: ["Cookie"],
+        shadowsIntoLight: ["Shadows Into Light"],
+      },
     },
   },
   darkMode: "class",

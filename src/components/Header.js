@@ -69,7 +69,7 @@ const Header = () => {
         </div>
       </nav>
       <div
-        className={`lg:hidden bg-gray-700 text-white p-2 transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`lg:hidden bg-beige text-white p-2 transition-all duration-300 ease-in-out overflow-hidden ${
           isTransitioning ? "" : "transition-none"
         }`}
         style={{
