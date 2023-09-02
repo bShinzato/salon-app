@@ -18,10 +18,10 @@ const Header = () => {
   }, [isTransitioning]);
 
   return (
-    <div className="bg-gray-800">
+    <div className="bg-beige">
       <nav className="p-4 lg:p-6 flex justify-between items-center">
         <Link to="/" className="text-white text-2xl font-bold">
-          DeesBeautiess
+          Beauty By Darelie
         </Link>
         <div className="flex items-center">
           <button

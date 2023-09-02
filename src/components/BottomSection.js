@@ -13,7 +13,7 @@ const BottomSection = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <div className="flex justify-center gap-4">
-      <Button onPress={onOpen} className="bg-yellow-300" variant="shadow">
+      <Button onPress={onOpen} className="bg-pink-100" variant="shadow">
         Get Started
       </Button>
       <Modal
@@ -79,7 +79,7 @@ const BottomSection = () => {
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button className="bg-yellow-300" onPress={onClose}>
+                <Button className="bg-pink-100" onPress={onClose}>
                   Contact Me
                 </Button>
               </ModalFooter>
@@ -87,7 +87,7 @@ const BottomSection = () => {
           )}
         </ModalContent>
       </Modal>
-      <Button className="bg-yellow-300 pr-6 pl-6" variant="shadow">
+      <Button className="bg-pink-100 pr-6 pl-6" variant="shadow">
         Services
       </Button>
     </div>

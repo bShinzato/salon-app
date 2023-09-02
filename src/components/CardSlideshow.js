@@ -8,7 +8,7 @@ const CardSlideshow = () => {
       <div className="gap-2 grid grid-cols-2 sm:grid-cols-4 p-2">
         {cardData.map((card, index) => (
           <Card key={index} className="sm:w-60 hover:scale-105 shadow-lg">
-            <CardHeader className="justify-center">
+            <CardHeader className="justify-center text-brownDark">
               <h4 className="font-bold">{card.title}</h4>
             </CardHeader>
             <CardBody>
