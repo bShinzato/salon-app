@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <div className="bg-beige">
-      <nav className="p-4 lg:p-6 flex justify-between items-center">
+      <nav className="p-4 lg:p-6 flex justify-between items-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
         <Link to="/" className="text-white text-2xl font-bold">
           Beauty By Darelie
         </Link>
@@ -36,7 +36,7 @@ const Header = () => {
             <li>
               <Link
                 to="/"
-                className="text-white hover:bg-gray-700 px-2 py-1 rounded"
+                className="text-white hover:bg-pink-100 px-2 py-1 rounded hover:duration-500 hover:text-black"
               >
                 Home
               </Link>
@@ -44,7 +44,7 @@ const Header = () => {
             <li>
               <Link
                 to="/services"
-                className="text-white hover:bg-gray-700 px-2 py-1 rounded"
+                className="text-white hover:bg-pink-100 px-2 py-1 rounded hover:duration-500 hover:text-black"
               >
                 Services
               </Link>
@@ -52,7 +52,7 @@ const Header = () => {
             <li>
               <Link
                 to="/about-me"
-                className="text-white hover:bg-gray-700 px-2 py-1 rounded"
+                className="text-white hover:bg-pink-100 px-2 py-1 rounded hover:duration-500 hover:text-black"
               >
                 About Me
               </Link>
@@ -60,7 +60,7 @@ const Header = () => {
             <li>
               <Link
                 to="/contact-me"
-                className="text-white hover:bg-gray-700 px-2 py-1 rounded"
+                className="text-white hover:bg-pink-100 px-2 py-1 rounded hover:duration-500 hover:text-black"
               >
                 Contact Me
               </Link>
@@ -77,24 +77,24 @@ const Header = () => {
           opacity: isOpen ? "1" : "0",
         }}
       >
-        <ul>
-          <li className="mb-2">
-            <Link to="/" className="text-white hover:text-gray-400">
+        <ul className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <li className="mb-2 flex justify-center">
+            <Link to="/" className="text-white hover:text-pink-100">
               Home
             </Link>
           </li>
-          <li className="mb-2">
-            <Link to="/services" className="text-white hover:text-gray-400">
+          <li className="mb-2 flex justify-center">
+            <Link to="/services" className="text-white hover:text-pink-100">
               Services
             </Link>
           </li>
-          <li className="mb-2">
-            <Link to="/about-me" className="text-white hover:text-gray-400">
+          <li className="mb-2 flex justify-center">
+            <Link to="/about-me" className="text-white hover:text-pink-100">
               About Me
             </Link>
           </li>
-          <li className="mb-2">
-            <Link to="/contact-me" className="text-white hover:text-gray-400">
+          <li className="mb-2 flex justify-center">
+            <Link to="/contact-me" className="text-white hover:text-pink-100">
               Contact Me
             </Link>
           </li>

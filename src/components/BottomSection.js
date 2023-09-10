@@ -8,6 +8,7 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
 const BottomSection = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -91,12 +92,14 @@ const BottomSection = () => {
           )}
         </ModalContent>
       </Modal>
-      <Button
-        className="bg-pink-100 pr-6 pl-6 font-shadowsIntoLight text-lg"
-        variant="shadow"
-      >
-        Services
-      </Button>
+      <Link to="/services">
+        <Button
+          className="bg-pink-100 pr-6 pl-6 font-shadowsIntoLight text-lg"
+          variant="shadow"
+        >
+          Services
+        </Button>
+      </Link>
     </div>
   );
 };
