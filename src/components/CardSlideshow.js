@@ -8,12 +8,12 @@ const CardImageSlideshow = ({ images }) => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setOpacity(0);
+      setOpacity(0.1); // Set opacity to 0 to fade out
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setOpacity(1);
-      }, 1000);
-    }, 7000);
+        setOpacity(1); // Set opacity back to 1 to fade in
+      }, 3000);
+    }, 10000);
 
     return () => {
       clearInterval(intervalId);
