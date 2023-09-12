@@ -8,11 +8,11 @@ const CardImageSlideshow = ({ images }) => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setOpacity(0.1); // Set opacity to 0 to fade out
+      setOpacity(0.05);
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setOpacity(1); // Set opacity back to 1 to fade in
-      }, 3000);
+        setOpacity(1);
+      }, 500);
     }, 10000);
 
     return () => {
@@ -38,7 +38,7 @@ const CardSlideshow = () => {
     <>
       <div className="gap-2 grid grid-cols-2 sm:grid-cols-4 p-2">
         {cardData.map((card, index) => (
-          <Card key={index} className="sm:w-60 shadow-lg">
+          <Card key={index} className="sm:w-60 shadow-lg hover:scale-105">
             <CardHeader className="justify-center text-brownDark font-shadowsIntoLight">
               <h4 className="font-bold">{card.title}</h4>
             </CardHeader>

@@ -79,22 +79,34 @@ const Header = () => {
       >
         <ul className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           <li className="mb-2 flex justify-center">
-            <Link to="/" className="text-white hover:text-pink-100">
+            <Link
+              to="/"
+              className="text-white hover:text-pink-100 hover:scale-110 duration-200"
+            >
               Home
             </Link>
           </li>
           <li className="mb-2 flex justify-center">
-            <Link to="/services" className="text-white hover:text-pink-100">
+            <Link
+              to="/services"
+              className="text-white hover:text-pink-100 hover:scale-110 duration-200"
+            >
               Services
             </Link>
           </li>
           <li className="mb-2 flex justify-center">
-            <Link to="/about-me" className="text-white hover:text-pink-100">
+            <Link
+              to="/about-me"
+              className="text-white hover:text-pink-100 hover:scale-110 duration-200"
+            >
               About Me
             </Link>
           </li>
           <li className="mb-2 flex justify-center">
-            <Link to="/contact-me" className="text-white hover:text-pink-100">
+            <Link
+              to="/contact-me"
+              className="text-white hover:text-pink-100 hover:scale-110 duration-200"
+            >
               Contact Me
             </Link>
           </li>
