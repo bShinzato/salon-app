@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="relative w-full bottom-0 bg-beige text-white p-3 md:fixed">
+    <div className="relative w-full bottom-0 bg-beige text-white p-3 md:relative">
       <div className="flex justify-between drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
         <div className="w-1/4">
           <h6 className="mb-4 font-semibold uppercase text-pink-100">

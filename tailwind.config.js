@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         beige: "#F5E1D1",
         brownDark: "#b45f06",
+        roseGold: "B76E79",
       },
       fontFamily: {
         cursive: ["Cookie"],

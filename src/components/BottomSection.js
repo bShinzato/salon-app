@@ -16,7 +16,7 @@ const BottomSection = () => {
     <div className="flex justify-center gap-4">
       <Button
         onPress={onOpen}
-        className="bg-pink-100 font-shadowsIntoLight text-lg"
+        className="bg-pink-100 font-shadowsIntoLight text-lg animate-appearance-in"
         variant="shadow"
       >
         Get Started
@@ -94,7 +94,7 @@ const BottomSection = () => {
       </Modal>
       <Link to="/services">
         <Button
-          className="bg-pink-100 pr-6 pl-6 font-shadowsIntoLight text-lg"
+          className="bg-pink-100 pr-6 pl-6 font-shadowsIntoLight text-lg animate-appearance-in"
           variant="shadow"
         >
           Services
