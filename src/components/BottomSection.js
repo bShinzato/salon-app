@@ -59,26 +59,52 @@ const BottomSection = () => {
               <ModalBody>
                 <p>
                   Hello and Welcome! My name is Darelie and thank you for taking
-                  the time to visit my website!
+                  the time to visit my website! I am really Flexible to book.
+                  Please communicate with me for I am open minded and
+                  understanding!
                 </p>
                 <p className="underline font-semibold">
                   Booking and Rescheduling:
                 </p>
                 <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
-                  <li>Please contact me 48+ hours advance.</li>
-                  <li>Please show up 5-10 minutes early.</li>
-                  <li>Direct deposit is required (Based on Services).</li>
                   <li>
-                    Reschedule 24 Hours in advance, Direct Deposit will be
-                    returned.
+                    Deposits are required to book your appointment via zelle or
+                    ApplePay.
                   </li>
+                  <li>
+                    Deposits are non refundable to cancellations and no call no
+                    show.
+                  </li>
+                  <li>
+                    To book an appointment please contact me via Text, Email, or
+                    DM on instagram or TikTok.
+                  </li>
+                </ul>
+                <p className="underline font-semibold">
+                  What to include in your message:
+                </p>
+                <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
+                  <li>Your name</li>
+                  <li>Best contact Info</li>
+                  <li>Type of Service</li>
+                  <li>History of your hair up to 8 months.</li>
+                  <li>
+                    3 Types of reference photos are needed prior to appointment
+                  </li>
+                  <li>Your current hair now in natural lighting.</li>
                 </ul>
                 <p className="underline font-semibold">Payment Options:</p>
                 <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
                   <li>Cash</li>
+                  <li>Zelle</li>
                   <li>ApplePay</li>
-                  <li>Venmo</li>
                 </ul>
+                <li className="underline font-semibold">
+                  Please allow 24-48 hours for me to respond.
+                </li>
+                <li className="underline font-semibold">
+                  Reschedule 24 hours prior to appointment.
+                </li>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
