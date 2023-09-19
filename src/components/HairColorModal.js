@@ -8,19 +8,18 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
-import { Link } from "react-router-dom";
 
-const BottomSection = () => {
+const HairColorModal = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [scrollBehavior] = useState("inside");
   return (
-    <div className="flex justify-center gap-4">
+    <>
       <Button
         onPress={onOpen}
-        className="bg-pink-100 font-shadowsIntoLight text-lg animate-appearance-in"
+        className="bg-pink-100 font-shadowsIntoLight text-lg hover:scale-105 animate-pulse"
         variant="shadow"
       >
-        Get Started
+        Hair Color Info
       </Button>
       <Modal
         backdrop="opaque"
@@ -56,18 +55,18 @@ const BottomSection = () => {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                Getting Started
+                Hair Color Info
               </ModalHeader>
               <ModalBody>
-                <p>
-                  Hello and welcome to my page! My name is Darelie, and I am
-                  really Flexible to book. Please communicate with me for I am
-                  open minded and understanding!
-                </p>
                 <p className="underline font-semibold">
-                  Booking and Rescheduling:
+                  Hair Color deposit: $25
                 </p>
-                <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
+                <ul
+                  style={{
+                    listStyleType: "disc",
+                    marginLeft: "40px",
+                  }}
+                >
                   <li>
                     Deposits are required to book your appointment via zelle or
                     ApplePay.
@@ -84,7 +83,12 @@ const BottomSection = () => {
                 <p className="underline font-semibold">
                   What to include in your message:
                 </p>
-                <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
+                <ul
+                  style={{
+                    listStyleType: "disc",
+                    marginLeft: "40px",
+                  }}
+                >
                   <li>Your name</li>
                   <li>Best contact Info</li>
                   <li>Type of Service</li>
@@ -95,7 +99,12 @@ const BottomSection = () => {
                   <li>Your current hair now in natural lighting.</li>
                 </ul>
                 <p className="underline font-semibold">Payment Options:</p>
-                <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
+                <ul
+                  style={{
+                    listStyleType: "disc",
+                    marginLeft: "40px",
+                  }}
+                >
                   <li>Cash</li>
                   <li>Zelle</li>
                   <li>ApplePay</li>
@@ -119,16 +128,8 @@ const BottomSection = () => {
           )}
         </ModalContent>
       </Modal>
-      <Link to="/services">
-        <Button
-          className="bg-pink-100 pr-6 pl-6 font-shadowsIntoLight text-lg animate-appearance-in"
-          variant="shadow"
-        >
-          Services
-        </Button>
-      </Link>
-    </div>
+    </>
   );
 };
 
-export default BottomSection;
+export default HairColorModal;
