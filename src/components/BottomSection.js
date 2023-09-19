@@ -64,7 +64,7 @@ const BottomSection = () => {
                   really Flexible to book. Please communicate with me for I am
                   open minded and understanding!
                 </p>
-                <p className="underline font-semibold">
+                <p className="font-semibold italic">
                   Booking and Rescheduling:
                 </p>
                 <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
@@ -81,31 +81,32 @@ const BottomSection = () => {
                     DM on instagram or TikTok.
                   </li>
                 </ul>
-                <p className="underline font-semibold">
+                <p className="font-semibold italic">
                   What to include in your message:
                 </p>
                 <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
-                  <li>Your name</li>
-                  <li>Best contact Info</li>
+                  <li>Your Name</li>
+                  <li>Best Contact Info</li>
                   <li>Type of Service</li>
-                  <li>History of your hair up to 8 months.</li>
+                  <li>* History of your hair up to 8 months.</li>
                   <li>
-                    3 Types of reference photos are needed prior to appointment
+                    * 3 Types of reference photos are needed prior to
+                    appointment
                   </li>
-                  <li>Your current hair now in natural lighting.</li>
+                  <li>* Your current hair now in natural lighting.</li>
                 </ul>
-                <p className="underline font-semibold">Payment Options:</p>
+                <p className="font-semibold italic">Payment Options:</p>
                 <ul style={{ listStyleType: "disc", marginLeft: "40px" }}>
                   <li>Cash</li>
                   <li>Zelle</li>
                   <li>ApplePay</li>
                 </ul>
-                <li className="underline font-semibold">
+                <p className="font-semibold italic">
                   Please allow 24-48 hours for me to respond.
-                </li>
-                <li className="underline font-semibold">
+                </p>
+                <p className="font-semibold italic">
                   Reschedule 24 hours prior to appointment.
-                </li>
+                </p>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

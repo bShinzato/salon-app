@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import { Card, CardBody, Image } from "@nextui-org/react";
 import cardData from "../CardData";
 import HaircutModal from "../components/HaircutModal";
 import HairColorModal from "../components/HairColorModal";
@@ -39,14 +39,20 @@ const CardImageSlideshow = ({ images }) => {
 
 const Services = () => {
   return (
-    <div className="md:items-center md:text-center sm:items-center sm:text-center items-center text-center p-5 antialiased">
-      <div>
+    <div
+      className="md:items-center md:text-center sm:items-center sm:text-center items-center text-center p-5 antialiased"
+      style={{
+        backgroundImage:
+          "url(https://images.pexels.com/photos/7815640/pexels-photo-7815640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat lg:repeat",
+      }}
+    >
+      <div className="animate-appearance-in">
         <h1 className="text-6xl font-cursive rounded-3xl text-brownDark">
           Haircuts
         </h1>
-        <p className="text-2xl font-shadowsIntoLight text-brownDark pb-3">
-          Within Haircuts you will recieve....
-        </p>
         <div className="flex justify-center items-center">
           <div className="flex justify-center">
             <Card
@@ -59,18 +65,16 @@ const Services = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <CardHeader className="justify-center text-brownDark font-shadowsIntoLight">
-                <h4 className="font-bold text-pink-100">{cardData[0].title}</h4>
-              </CardHeader>
-              <CardBody className="grid grid-cols-2 items-center justify-center">
+              <CardBody className="grid grid-cols-2 items-center justify-center gap-3">
                 <div>
                   <CardImageSlideshow images={cardData[0].imageSrc} />
                 </div>
                 <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-10 lg:pl-16">
-                  <li className="font-bold">Includes:</li>
-                  <li>Blow Dry</li>
-                  <li>Hair Serum</li>
-                  <li>Hair Protection</li>
+                  <li className="font-bold">Services:</li>
+                  <li>-Bang Trim</li>
+                  <li>-Haircuts</li>
+                  <li>-Style Haircuts</li>
+                  <li>-Beard Trim</li>
                 </ul>
               </CardBody>
               <HaircutModal />
@@ -80,9 +84,6 @@ const Services = () => {
         <h1 className="text-6xl font-cursive rounded-3xl text-brownDark pt-3">
           Hair Color
         </h1>
-        <p className="text-2xl font-shadowsIntoLight text-brownDark pb-3">
-          Within Hair Color you will receive.....
-        </p>
         <div className="flex justify-center items-center">
           <div className="flex justify-center">
             <Card
@@ -95,18 +96,16 @@ const Services = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <CardHeader className="justify-center text-pink-100 font-shadowsIntoLight">
-                <h4 className="font-bold">{cardData[1].title}</h4>
-              </CardHeader>
-              <CardBody className="grid grid-cols-2 items-center justify-center">
-                <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-10 lg:pl-16">
-                  <li className="font-bold">Includes:</li>
-                  <li>Blow Dry</li>
-                  <li>Hair Serum</li>
-                  <li>Hair Protection</li>
-                  <li>Blow Dry</li>
-                  <li>Blow Dry</li>
-                  <li>Blow Dry</li>
+              <CardBody className="grid grid-cols-2 items-center justify-center pl-1 gap-3">
+                <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-5 lg:pl-16">
+                  <li className="font-bold">Services:</li>
+                  <li>-Toner & Gloss</li>
+                  <li>-Color Retouch</li>
+                  <li>-All over Color</li>
+                  <li>-Color Correction</li>
+                  <li>-Partial Highlights</li>
+                  <li>-Full Highlights</li>
+                  <li>-Balayage</li>
                 </ul>
                 <div>
                   <CardImageSlideshow images={cardData[1].imageSrc} />
@@ -119,9 +118,6 @@ const Services = () => {
         <h1 className="text-6xl font-cursive rounded-3xl text-brownDark pt-3">
           Facials
         </h1>
-        <p className="text-2xl font-shadowsIntoLight text-brownDark pb-3">
-          Within Facials you will receive the following...
-        </p>
         <div className="flex justify-center items-center">
           <div className="flex justify-center">
             <Card
@@ -134,21 +130,15 @@ const Services = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <CardHeader className="justify-center text-brownDark font-shadowsIntoLight">
-                <h4 className="font-bold text-pink-100">{cardData[2].title}</h4>
-              </CardHeader>
               <CardBody className="grid grid-cols-2 items-center justify-center">
                 <div>
                   <CardImageSlideshow images={cardData[2].imageSrc} />
                 </div>
                 <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-10 lg:pl-16">
-                  <li className="font-bold">Includes:</li>
-                  <li>Blow Dry</li>
-                  <li>Hair Serum</li>
-                  <li>Hair Protection</li>
-                  <li>Blow Dry</li>
-                  <li>Blow Dry</li>
-                  <li>Blow Dry</li>
+                  <li className="font-bold">Services:</li>
+                  <li>-Basical Facial</li>
+                  <li>-Spa Facial</li>
+                  <li>- *Treatment Addons</li>
                 </ul>
               </CardBody>
               <FacialsModal />
@@ -158,9 +148,6 @@ const Services = () => {
         <h1 className="text-6xl font-cursive rounded-3xl text-brownDark pt-3">
           Nails
         </h1>
-        <p className="text-2xl font-shadowsIntoLight text-brownDark pb-3">
-          Within Nails you will receive the following....
-        </p>
         <div className="flex justify-center items-center">
           <div className="flex justify-center">
             <Card
@@ -173,18 +160,15 @@ const Services = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <CardHeader className="justify-center text-brownDark font-shadowsIntoLight">
+              {/* <CardHeader className="justify-center text-brownDark font-shadowsIntoLight">
                 <h4 className="font-bold text-pink-100">{cardData[3].title}</h4>
-              </CardHeader>
-              <CardBody className="grid grid-cols-2 items-center justify-center">
-                <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-10 lg:pl-16">
-                  <li className="font-bold">Includes:</li>
-                  <li>Blow Dry</li>
-                  <li>Hair Serum</li>
-                  <li>Hair Protection</li>
-                  <li>Blow Dry</li>
-                  <li>Blow Dry</li>
-                  <li>Blow Dry</li>
+              </CardHeader> */}
+              <CardBody className="grid grid-cols-2 items-center justify-center pl-1 gap-3">
+                <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-5 lg:pl-16">
+                  <li className="font-bold">Services:</li>
+                  <li>-Manicure(s)</li>
+                  <li>-Gel Polish</li>
+                  <li>-*Addons</li>
                 </ul>
                 <div>
                   <CardImageSlideshow images={cardData[3].imageSrc} />

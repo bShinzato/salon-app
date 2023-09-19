@@ -19,7 +19,7 @@ const NailsModal = () => {
         className="bg-pink-100 font-shadowsIntoLight text-lg hover:scale-105 animate-pulse"
         variant="shadow"
       >
-        Facials Info
+        Nails Info
       </Button>
       <Modal
         backdrop="opaque"
@@ -55,10 +55,10 @@ const NailsModal = () => {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                Facials Info
+                Nails Info
               </ModalHeader>
               <ModalBody>
-                <p className="underline font-semibold">Facials deposit: $15</p>
+                <p className="font-semibold italic">Nails deposit: $15</p>
                 <ul
                   style={{
                     listStyleType: "disc",
@@ -78,7 +78,23 @@ const NailsModal = () => {
                     DM on instagram or TikTok.
                   </li>
                 </ul>
-                <p className="underline font-semibold">
+                <p className="font-semibold italic">
+                  {" "}
+                  Full List of Services Available:
+                </p>
+                <ul
+                  style={{
+                    listStyleType: "disc",
+                    marginLeft: "40px",
+                  }}
+                >
+                  <li>Basic Manicure: $20</li>
+                  <li>Spa Manicure & Gel Polish: $30</li>
+                  <li>Gel X & Gel Polish: $55</li>
+                  <li>* Extra 20 Minute Hand Massage: $10</li>
+                  <li>* Charms (As many as you want): $5</li>
+                </ul>
+                <p className="font-semibold italic">
                   What to include in your message:
                 </p>
                 <ul
@@ -87,16 +103,11 @@ const NailsModal = () => {
                     marginLeft: "40px",
                   }}
                 >
-                  <li>Your name</li>
+                  <li>Your Name</li>
                   <li>Best contact Info</li>
                   <li>Type of Service</li>
-                  <li>History of your hair up to 8 months.</li>
-                  <li>
-                    3 Types of reference photos are needed prior to appointment
-                  </li>
-                  <li>Your current hair now in natural lighting.</li>
                 </ul>
-                <p className="underline font-semibold">Payment Options:</p>
+                <p className="font-semibold italic">Payment Options:</p>
                 <ul
                   style={{
                     listStyleType: "disc",
@@ -107,12 +118,12 @@ const NailsModal = () => {
                   <li>Zelle</li>
                   <li>ApplePay</li>
                 </ul>
-                <li className="underline font-semibold">
+                <p className="font-semibold italic">
                   Please allow 24-48 hours for me to respond.
-                </li>
-                <li className="underline font-semibold">
+                </p>
+                <p className="font-semibold italic">
                   Reschedule 24 hours prior to appointment.
-                </li>
+                </p>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

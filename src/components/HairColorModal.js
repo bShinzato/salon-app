@@ -58,9 +58,7 @@ const HairColorModal = () => {
                 Hair Color Info
               </ModalHeader>
               <ModalBody>
-                <p className="underline font-semibold">
-                  Hair Color deposit: $25
-                </p>
+                <p className="font-semibold italic">Hair Color deposit: $25</p>
                 <ul
                   style={{
                     listStyleType: "disc",
@@ -80,7 +78,24 @@ const HairColorModal = () => {
                     DM on instagram or TikTok.
                   </li>
                 </ul>
-                <p className="underline font-semibold">
+                <p className="font-semibold italic">
+                  Full List of Services Available:
+                </p>
+                <ul
+                  style={{
+                    listStyleType: "disc",
+                    marginLeft: "40px",
+                  }}
+                >
+                  <li>Toner & Gloss: $50</li>
+                  <li>Color Retouch: $50</li>
+                  <li>All Over Color on Virgin Hair: $60</li>
+                  <li>Color Crrection: Starting $150</li>
+                  <li>Partial Highlights: Starting $170</li>
+                  <li>Full Head Highlights: Starting $170 (Includes toner)</li>
+                  <li>Balayage: Starting $170</li>
+                </ul>
+                <p className="font-semibold italic">
                   What to include in your message:
                 </p>
                 <ul
@@ -89,16 +104,16 @@ const HairColorModal = () => {
                     marginLeft: "40px",
                   }}
                 >
-                  <li>Your name</li>
-                  <li>Best contact Info</li>
+                  <li>Your Name</li>
+                  <li>Best Contact Info</li>
                   <li>Type of Service</li>
-                  <li>History of your hair up to 8 months.</li>
+                  <li>History of your hair up to 8 months</li>
                   <li>
-                    3 Types of reference photos are needed prior to appointment
+                    3 types of reference photos are needed prior to appointment
                   </li>
-                  <li>Your current hair now in natural lighting.</li>
+                  <li>Your current hair now in natural lighting</li>
                 </ul>
-                <p className="underline font-semibold">Payment Options:</p>
+                <p className="font-semibold italic">Payment Options:</p>
                 <ul
                   style={{
                     listStyleType: "disc",
@@ -109,12 +124,12 @@ const HairColorModal = () => {
                   <li>Zelle</li>
                   <li>ApplePay</li>
                 </ul>
-                <li className="underline font-semibold">
+                <p className="font-semibold italic">
                   Please allow 24-48 hours for me to respond.
-                </li>
-                <li className="underline font-semibold">
+                </p>
+                <p className="font-semibold italic">
                   Reschedule 24 hours prior to appointment.
-                </li>
+                </p>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

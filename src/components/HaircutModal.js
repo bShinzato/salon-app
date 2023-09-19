@@ -58,8 +58,8 @@ const HaircutModal = () => {
                 Haircut Info
               </ModalHeader>
               <ModalBody>
-                <p className="underline font-semibold">
-                  Haircut deposit: $10 (Bang trim no deposit required)
+                <p className="font-semibold italic">
+                  Haircut deposit: $20 (Bang trim no deposit required)
                 </p>
                 <ul
                   style={{
@@ -80,7 +80,22 @@ const HaircutModal = () => {
                     DM on instagram or TikTok.
                   </li>
                 </ul>
-                <p className="underline font-semibold">
+                <p className="font-semibold italic">
+                  Full List of Services Available:
+                </p>
+                <ul
+                  style={{
+                    listStyleType: "disc",
+                    marginLeft: "40px",
+                  }}
+                >
+                  <li>Bang Trim: $10</li>
+                  <li>Women's Haircut: $50</li>
+                  <li>Women's Haircut including Style: $60</li>
+                  <li>Men's Haircut: $40</li>
+                  <li>Men's Haircut including Beard Trim: $40</li>
+                </ul>
+                <p className="font-semibold italic">
                   What to include in your message:
                 </p>
                 <ul
@@ -89,16 +104,14 @@ const HaircutModal = () => {
                     marginLeft: "40px",
                   }}
                 >
-                  <li>Your name</li>
-                  <li>Best contact Info</li>
+                  <li>Your Name</li>
+                  <li>Best Contact Info</li>
                   <li>Type of Service</li>
-                  <li>History of your hair up to 8 months.</li>
                   <li>
                     3 Types of reference photos are needed prior to appointment
                   </li>
-                  <li>Your current hair now in natural lighting.</li>
                 </ul>
-                <p className="underline font-semibold">Payment Options:</p>
+                <p className="font-semibold italic">Payment Options:</p>
                 <ul
                   style={{
                     listStyleType: "disc",
@@ -109,12 +122,12 @@ const HaircutModal = () => {
                   <li>Zelle</li>
                   <li>ApplePay</li>
                 </ul>
-                <li className="underline font-semibold">
+                <p className="font-semibold italic">
                   Please allow 24-48 hours for me to respond.
-                </li>
-                <li className="underline font-semibold">
+                </p>
+                <p className="font-semibold italic">
                   Reschedule 24 hours prior to appointment.
-                </li>
+                </p>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
