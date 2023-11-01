@@ -40,143 +40,141 @@ const CardImageSlideshow = ({ images }) => {
 const Services = () => {
   return (
     <div
-      className="md:items-center md:text-center sm:items-center sm:text-center items-center text-center p-5 antialiased"
-      style={{
-        backgroundImage:
-          "url(https://images.pexels.com/photos/7815640/pexels-photo-7815640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat lg:repeat",
-      }}
+      className="p-5 antialiased lg:grid lg:grid-cols-2 lg:gap-5 animate-appearance-in"
+      // style={{
+      //   backgroundImage:
+      //     "url(https://images.pexels.com/photos/849403/pexels-photo-849403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      //   backgroundRepeat: "no-repeat lg:repeat",
+      // }}
     >
-      <div className="animate-appearance-in">
+      <div className="flex flex-col items-center w-full lg:w-auto">
         <h1 className="text-6xl font-cursive rounded-3xl text-brownDark">
           Haircuts
         </h1>
         <div className="flex justify-center items-center">
-          <div className="flex justify-center">
-            <Card
-              className="sm:w-60 shadow-lg md:w-60 lg:w-4/5 pb-2"
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <CardBody className="grid grid-cols-2 items-center justify-center gap-3">
-                <div>
-                  <CardImageSlideshow images={cardData[0].imageSrc} />
-                </div>
-                <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-10 lg:pl-16">
-                  <li className="font-bold">Services:</li>
-                  <li>-Bang Trim</li>
-                  <li>-Haircuts</li>
-                  <li>-Style Haircuts</li>
-                  <li>-Beard Trim</li>
-                </ul>
-              </CardBody>
-              <HaircutModal />
-            </Card>
-          </div>
+          <Card
+            className="sm:w-60 shadow-lg md:w-60 lg:w-4/5 pb-2"
+            style={{
+              backgroundImage:
+                "url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <CardBody className="grid grid-cols-2 items-center justify-center gap-3">
+              <div>
+                <CardImageSlideshow images={cardData[0].imageSrc} />
+              </div>
+              <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-10 lg:pl-16">
+                <li className="font-bold">Services:</li>
+                <li>-Bang Trim</li>
+                <li>-Haircuts</li>
+                <li>-Style Haircuts</li>
+                <li>-Beard Trim</li>
+              </ul>
+            </CardBody>
+            <HaircutModal />
+          </Card>
         </div>
+      </div>
+      <div className="flex flex-col items-center w-full lg:w-auto">
         <h1 className="text-6xl font-cursive rounded-3xl text-brownDark pt-3">
           Hair Color
         </h1>
         <div className="flex justify-center items-center">
-          <div className="flex justify-center">
-            <Card
-              className="sm:w-60 shadow-lg md:w-60 lg:w-4/5 pb-2"
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <CardBody className="grid grid-cols-2 items-center justify-center pl-1 gap-3">
-                <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-5 lg:pl-16">
-                  <li className="font-bold">Services:</li>
-                  <li>-Toner & Gloss</li>
-                  <li>-Color Retouch</li>
-                  <li>-All over Color</li>
-                  <li>-Color Correction</li>
-                  <li>-Partial Highlights</li>
-                  <li>-Full Highlights</li>
-                  <li>-Balayage</li>
-                </ul>
-                <div>
-                  <CardImageSlideshow images={cardData[1].imageSrc} />
-                </div>
-              </CardBody>
-              <HairColorModal />
-            </Card>
-          </div>
+          <Card
+            className="sm:w-60 shadow-lg md:w-60 lg:w-4/5 pb-2"
+            style={{
+              backgroundImage:
+                "url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <CardBody className="grid grid-cols-2 items-center justify-center pl-1 gap-3">
+              <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-5 lg:pl-16">
+                <li className="font-bold">Services:</li>
+                <li>-Toner & Gloss</li>
+                <li>-Color Retouch</li>
+                <li>-All over Color</li>
+                <li>-Color Correction</li>
+                <li>-Partial Highlights</li>
+                <li>-Full Highlights</li>
+                <li>-Balayage</li>
+              </ul>
+              <div>
+                <CardImageSlideshow images={cardData[1].imageSrc} />
+              </div>
+            </CardBody>
+            <HairColorModal />
+          </Card>
         </div>
+      </div>
+      <div className="flex flex-col items-center w-full lg:w-auto">
         <h1 className="text-6xl font-cursive rounded-3xl text-brownDark pt-3">
           Facials
         </h1>
         <div className="flex justify-center items-center">
-          <div className="flex justify-center">
-            <Card
-              className="sm:w-60 shadow-lg md:w-60 lg:w-4/5 pb-2"
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <CardBody className="grid grid-cols-2 items-center justify-center">
-                <div>
-                  <CardImageSlideshow images={cardData[2].imageSrc} />
-                </div>
-                <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-10 lg:pl-16">
-                  <li className="font-bold">Services:</li>
-                  <li>-Basical Facial</li>
-                  <li>-Spa Facial</li>
-                  <li>- *Treatment Addons</li>
-                </ul>
-              </CardBody>
-              <FacialsModal />
-            </Card>
-          </div>
+          <Card
+            className="sm:w-60 shadow-lg md:w-60 lg:w-4/5 pb-2"
+            style={{
+              backgroundImage:
+                "url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <CardBody className="grid grid-cols-2 items-center justify-center">
+              <div>
+                <CardImageSlideshow images={cardData[2].imageSrc} />
+              </div>
+              <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-10 lg:pl-16">
+                <li className="font-bold">Services:</li>
+                <li>-Basical Facial</li>
+                <li>-Spa Facial</li>
+                <li>- *Treatment Addons</li>
+              </ul>
+            </CardBody>
+            <FacialsModal />
+          </Card>
         </div>
+      </div>
+      <div className="flex flex-col items-center w-full lg:w-auto">
         <h1 className="text-6xl font-cursive rounded-3xl text-brownDark pt-3">
           Nails
         </h1>
         <div className="flex justify-center items-center">
-          <div className="flex justify-center">
-            <Card
-              className="sm:w-60 shadow-lg md:w-60 lg:w-4/5 pb-2"
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              {/* <CardHeader className="justify-center text-brownDark font-shadowsIntoLight">
+          <Card
+            className="sm:w-60 shadow-lg md:w-60 lg:w-4/5 pb-2"
+            style={{
+              backgroundImage:
+                "url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {/* <CardHeader className="justify-center text-brownDark font-shadowsIntoLight">
                 <h4 className="font-bold text-pink-100">{cardData[3].title}</h4>
               </CardHeader> */}
-              <CardBody className="grid grid-cols-2 items-center justify-center pl-1 gap-3">
-                <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-5 lg:pl-16">
-                  <li className="font-bold">Services:</li>
-                  <li>-Manicure(s)</li>
-                  <li>-Gel Polish</li>
-                  <li>-*Addons</li>
-                </ul>
-                <div>
-                  <CardImageSlideshow images={cardData[3].imageSrc} />
-                </div>
-              </CardBody>
-              <NailsModal />
-            </Card>
-          </div>
+            <CardBody className="grid grid-cols-2 items-center justify-center pl-1 gap-3">
+              <ul className="text-lg font-shadowsIntoLight text-pink-100 pl-5 lg:pl-16">
+                <li className="font-bold">Services:</li>
+                <li>-Manicure(s)</li>
+                <li>-Gel Polish</li>
+                <li>-*Addons</li>
+              </ul>
+              <div>
+                <CardImageSlideshow images={cardData[3].imageSrc} />
+              </div>
+            </CardBody>
+            <NailsModal />
+          </Card>
         </div>
       </div>
     </div>

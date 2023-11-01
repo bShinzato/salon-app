@@ -14,7 +14,7 @@ const BottomSection = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [scrollBehavior] = useState("inside");
   return (
-    <div className="flex justify-center gap-4">
+    <div className="flex justify-center gap-4 pb-5 pt-5">
       <Button
         onPress={onOpen}
         className="bg-pink-100 font-shadowsIntoLight text-lg animate-appearance-in"

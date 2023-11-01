@@ -8,7 +8,7 @@ import { Route, Routes } from "react-router-dom";
 const App = () => {
   return (
     <>
-      <div className="overflow-x-hidden ">
+      <div className="overflow-x-hidden flex flex-col min-h-screen">
         <div className="flex-grow">
           <Header />
           <Routes>

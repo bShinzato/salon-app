@@ -1,6 +1,5 @@
 import React from "react";
 import TopSection from "../components/TopSection";
-import BottomSection from "../components/BottomSection";
 import CardSlideshow from "../components/CardSlideshow";
 
 const Home = () => {
@@ -15,7 +14,6 @@ const Home = () => {
       }}
     >
       <TopSection />
-      <BottomSection />
       <CardSlideshow />
     </div>
   );
