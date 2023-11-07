@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <div className="bg-beige">
-      <nav className="p-4 lg:p-6 flex justify-between items-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+      <nav className="p-4 lg:p-5 flex justify-between items-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
         <Link to="/" className="text-white text-2xl font-bold">
           Beauty By Darelie
         </Link>
@@ -51,25 +51,17 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/about-me"
+                to="/AboutMe"
                 className="text-white hover:bg-pink-100 px-2 py-1 rounded hover:duration-500 hover:text-black"
               >
                 About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact-me"
-                className="text-white hover:bg-pink-100 px-2 py-1 rounded hover:duration-500 hover:text-black"
-              >
-                Contact Me
               </Link>
             </li>
           </ul>
         </div>
       </nav>
       <div
-        className={`lg:hidden bg-beige text-white p-2 transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`lg:hidden bg-beige text-white transition-all duration-300 ease-in-out overflow-hidden ${
           isTransitioning ? "" : "transition-none"
         }`}
         style={{
@@ -100,14 +92,6 @@ const Header = () => {
               className="text-white hover:text-pink-100 hover:scale-110 duration-200"
             >
               About Me
-            </Link>
-          </li>
-          <li className="mb-2 flex justify-center">
-            <Link
-              to="/contact-me"
-              className="text-white hover:text-pink-100 hover:scale-110 duration-200"
-            >
-              Contact Me
             </Link>
           </li>
         </ul>

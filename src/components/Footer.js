@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="relative bottom-0 w-full bg-beige text-white p-3">
+    <div className="relative bottom-0 w-full bg-beige text-white p-3 lg:flex-auto lg:text-center">
       <div className="flex justify-between drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
         <div className="w-1/4">
           <h6 className="mb-4 font-semibold uppercase text-pink-100">
@@ -56,14 +56,6 @@ const Footer = () => {
                 Services
               </Link>
             </li>
-            <li>
-              <Link
-                to="/contact-me"
-                className="hover:text-pink-100  duration-200"
-              >
-                Contact Me
-              </Link>
-            </li>
           </ul>
         </div>
         <div className="w-1/4">
@@ -98,7 +90,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <div className="mt-4 flex space-x-4">
+          <div className="mt-4 space-x-4">
             <a
               href="https://www.instagram.com/deesbeautiess/"
               target="_blank"
