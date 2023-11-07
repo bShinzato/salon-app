@@ -10,15 +10,8 @@ const AboutMe = () => {
           highlights. Check out below for a brief gallery of my work!
         </p>
         <div className="flex items-center justify-center">
-          <img
-            alt="Selfie"
-            src="/images/Subject.png"
-            className="w-2/3 h-3/3 rounded-3xl"
-          />
+          <p>Gallery</p>
         </div>
-      </div>
-      <div className="text-6xl font-cursive rounded-3xl text-brownDark lg:text-center">
-        Gallery
       </div>
     </>
   );
