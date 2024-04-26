@@ -49,14 +49,6 @@ const Header = () => {
                 Services
               </Link>
             </li>
-            <li>
-              <Link
-                to="/AboutMe"
-                className="text-white hover:bg-pink-100 px-2 py-1 rounded hover:duration-500 hover:text-black"
-              >
-                About Me
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>

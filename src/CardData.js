@@ -16,25 +16,7 @@ const cardData = [
       "https://th.bing.com/th/id/OIP.ihP7th9AScmPQ2EQScRPFQHaIl?pid=ImgDet&rs=1",
       "https://grandbeautyspa.com/wp-content/uploads/2017/07/Hair-color.jpg",
     ],
-  },
-  {
-    title: "Facials",
-    description: "Description for Card 2",
-    imageSrc: [
-      "https://c1.staticflickr.com/3/2888/9865582355_df71d00c02_b.jpg",
-      "https://th.bing.com/th/id/OIP.f_93qfJy6WKCnizJgWD80QHaJ4?w=138&h=184&c=7&r=0&o=5&pid=1.7",
-      "https://th.bing.com/th/id/R.282c606acc267252ffaf89fa7454872b?rik=wTefUQUzw86W9Q&riu=http%3a%2f%2fsanctumbeauty.co.uk%2fwp-content%2fuploads%2f2012%2f05%2fFacial.jpg&ehk=FoVwU85HqSC8k48kSt3YxfEjIW6VvZMGMHOUDpMIRlA%3d&risl=&pid=ImgRaw&r=0",
-    ],
-  },
-  {
-    title: "Nails",
-    description: "Description for Card 2",
-    imageSrc: [
-      "https://youhavestyle.com/wp-content/uploads/2020/11/125484065_280802486684550_7549447364354658045_n-864x1024.jpg",
-      "https://i.pinimg.com/originals/aa/11/f6/aa11f63caf1c64bfa805163338eabe99.jpg",
-      "https://i.pinimg.com/originals/89/54/ed/8954ed653cf633500c6c377edf65cdf7.jpg",
-    ],
-  },
+  }
 ];
 
 export default cardData;

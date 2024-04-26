@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import cardData from "../CardData";
+import { Link } from "react-router-dom";
 
 const CardImageSlideshow = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -36,8 +37,9 @@ const CardImageSlideshow = ({ images }) => {
 const CardSlideshow = () => {
   return (
     <>
-      <div className="gap-2 grid grid-cols-2 sm:grid-cols-4 p-2 animate-appearance-in lg:flex-evenly justify-items-center">
+      <div className="flex justify-center gap-2 px-4 py-4 lg:gap-36 animate-appearance-in justify-items-center">
         {cardData.map((card, index) => (
+        <Link to="/Services" key={index} className="block no-underline">
           <Card key={index} className="sm:w-60 shadow-lg hover:scale-105">
             <CardHeader className="justify-center text-brownDark font-shadowsIntoLight">
               <h4 className="font-bold">{card.title}</h4>
@@ -46,6 +48,7 @@ const CardSlideshow = () => {
               <CardImageSlideshow images={card.imageSrc} />
             </CardBody>
           </Card>
+        </Link>
         ))}
       </div>
     </>

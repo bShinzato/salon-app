@@ -4,31 +4,14 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="relative bottom-0 w-full bg-beige text-white p-3 lg:flex-auto lg:text-center">
-      <div className="flex justify-between drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-        <div className="w-1/4">
-          <h6 className="mb-4 font-semibold uppercase text-pink-100">
-            Products
-          </h6>
+      <div className="flex justify-evenly drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+      <div className="hidden lg:block w-1/4">
+          <h6 className="mb-4 font-semibold uppercase text-pink-100">About Me</h6>
           <ul className="space-y-2">
             <li>
-              <a href="#!" className="hover:text-pink-100  duration-200">
-                Haircuts
-              </a>
-            </li>
-            <li>
-              <a href="#!" className="hover:text-pink-100  duration-200">
-                Hair Color
-              </a>
-            </li>
-            <li>
-              <a href="#!" className="hover:text-pink-100  duration-200">
-                Facials
-              </a>
-            </li>
-            <li>
-              <a href="#!" className="hover:text-pink-100  duration-200">
-                Nails
-              </a>
+              <p to="/" className="hover:text-pink-100  duration-200">
+                I specialize in Hair color and Haircuts. Offering a variety of services for all hair and keen attention to detail to ensure you are satisfied with the final product.
+              </p>
             </li>
           </ul>
         </div>
@@ -38,14 +21,6 @@ const Footer = () => {
             <li>
               <Link to="/" className="hover:text-pink-100  duration-200">
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about-me"
-                className="hover:text-pink-100  duration-200"
-              >
-                About Me
               </Link>
             </li>
             <li>
