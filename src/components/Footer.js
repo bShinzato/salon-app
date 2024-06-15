@@ -31,6 +31,14 @@ const Footer = () => {
                 Services
               </Link>
             </li>
+            <li>
+              <Link
+                to="/contactme"
+                className="hover:text-pink-100  duration-200"
+              >
+                Contact Me
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="w-1/4">

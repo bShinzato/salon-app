@@ -22,7 +22,7 @@ const TopSection = () => {
       </div>
       <div className="text-2xl font-cursive text-brownDark animate-appearance-in grid grid-cols-2 justify-center text-center pb-5">
         <h1>75-030 Gerald Ford Dr STE 203, Palm Desert, CA 92211</h1>
-        <p>M-F 9:00AM - 5:00PM</p>
+        <p>M-TH 9:00AM - 5:00PM</p>
       </div>
     </>
   );

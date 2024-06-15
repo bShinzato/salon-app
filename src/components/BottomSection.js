@@ -112,9 +112,11 @@ const BottomSection = () => {
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
+                <Link to="/contactme">
                 <Button className="bg-pink-100" onPress={onClose}>
                   Contact Me
                 </Button>
+                </Link>
               </ModalFooter>
             </>
           )}

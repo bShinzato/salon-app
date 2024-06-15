@@ -80,10 +80,10 @@ const Header = () => {
           </li>
           <li className="mb-2 flex justify-center">
             <Link
-              to="/about-me"
+              to="/contactme"
               className="text-white hover:text-pink-100 hover:scale-110 duration-200"
             >
-              About Me
+              Contact Me
             </Link>
           </li>
         </ul>

@@ -8,6 +8,7 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
 const HaircutModal = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -133,9 +134,11 @@ const HaircutModal = () => {
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
+                <Link to="/contactme">
                 <Button className="bg-pink-100" onPress={onClose}>
                   Contact Me
                 </Button>
+                </Link>
               </ModalFooter>
             </>
           )}
