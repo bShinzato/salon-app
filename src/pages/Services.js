@@ -27,7 +27,7 @@ const CardImageSlideshow = ({ images }) => {
       alt="Card background"
       src={images[currentImageIndex]}
       style={{
-        transition: "opacity 1s ease-in-out",
+        transition: "opacity 2s ease-in-out",
         opacity: opacity,
       }}
       className="object-cover rounded-xl w-48 h-48 md:h-64 md:w-64"

@@ -21,8 +21,8 @@ const TopSection = () => {
         <p>Hours</p>
       </div>
       <div className="text-2xl font-cursive text-brownDark animate-appearance-in grid grid-cols-2 justify-center text-center pb-5">
-        <h1>75-030 Gerald Ford Dr STE 203, Palm Desert, CA 92211</h1>
-        <p>M-TH 9:00AM - 5:00PM</p>
+        <h1>Will travel to your destination</h1>
+        <p>Monday: 4PM - 8PM Tuesday & Wednesday: 9AM-11PM</p>
       </div>
     </>
   );

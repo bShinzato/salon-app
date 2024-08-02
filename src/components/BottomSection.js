@@ -7,12 +7,26 @@ import {
   ModalFooter,
   Button,
   useDisclosure,
+  Dropdown, 
+  DropdownTrigger, 
+  DropdownMenu, 
+  DropdownItem
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
 const BottomSection = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   const [scrollBehavior] = useState("inside");
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:darelie_ramos@yahoo.com"
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href ="tel:760-880-0819"
+  };
+
   return (
     <div className="flex justify-center gap-4 pb-5 pt-5">
       <Button
@@ -112,11 +126,21 @@ const BottomSection = () => {
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Link to="/contactme">
-                <Button className="bg-pink-100" onPress={onClose}>
-                  Contact Me
-                </Button>
-                </Link>
+                <Dropdown>
+      <DropdownTrigger>
+        <Button 
+          variant="bordered" 
+        >
+          Contact Me
+        </Button>
+      </DropdownTrigger>
+      <DropdownMenu aria-label="Static Actions">
+        <DropdownItem key="email" className="text-danger" color="danger" onClick={handleEmailClick}>
+          Email
+          </DropdownItem>
+        <DropdownItem key="phone" className="text-danger" color="danger" onClick={handlePhoneClick}>Phone</DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
               </ModalFooter>
             </>
           )}

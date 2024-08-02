@@ -9,11 +9,11 @@ const CardImageSlideshow = ({ images }) => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setOpacity(0.05);
+      setOpacity(0);
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setOpacity(1);
-      }, 500);
+      }, 1000);
     }, 10000);
 
     return () => {
